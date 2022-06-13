@@ -154,7 +154,7 @@ app-panel:nth-of-type(3) > list-item:nth-of-type(1) list-cell {padding: 0 0 .5re
 
 app-panel:nth-of-type(3) > list-item:nth-of-type(3) {background-color: rgba(255,255,255,0.02);}
 
-app-panel:nth-of-type(3) panel-list {margin-top: .5rem;}
+app-panel:nth-of-type(3) panel-list {margin: .5rem 0;}
 
 app-panel:nth-of-type(3) panel-list:last-of-type list-item {
   cursor: pointer;
@@ -162,7 +162,13 @@ app-panel:nth-of-type(3) panel-list:last-of-type list-item {
   transition: background-color 250ms;
 }
 
-app-panel:nth-of-type(3) panel-list:last-of-type list-item:hover {background-color: rgba(117,193,255,0.2);}
+app-panel:nth-of-type(3) panel-list:last-of-type list-item:hover {
+  background-color: rgba(117,193,255,0.2);
+}
+
+app-panel:nth-of-type(3) panel-list list-item {
+  border-radius: .2rem;
+}
 
 app-panel:nth-of-type(3) > list-item:first-of-type {
   align-items: center;
@@ -171,6 +177,7 @@ app-panel:nth-of-type(3) > list-item:first-of-type {
 app-panel:nth-of-type(3) > list-item:last-of-type {
   padding: .5rem 1rem;
   background-color: rgba(255,255,255,0.02);
+  border-radius: .3rem;
 }
 
 app-panel:nth-of-type(3) > list-item:nth-of-type(3) list-cell {
