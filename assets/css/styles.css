@@ -133,7 +133,7 @@ list-cell {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding: 1rem .5rem;
+  padding: .5rem;
 }
 list-cell:not(:first-of-type):not(:last-of-type) {text-align: center;}
 
@@ -162,6 +162,21 @@ app-panel:nth-of-type(3) panel-list:last-of-type list-item {
 }
 
 app-panel:nth-of-type(3) panel-list:last-of-type list-item:hover {background-color: rgba(117,193,255,0.2);}
+
+app-panel:nth-of-type(3) > list-item:first-of-type {
+  align-items: center;
+}
+
+app-panel:nth-of-type(3) > list-item:last-of-type {
+  padding: .5rem 1rem;
+  background-color: rgba(255,255,255,0.02);
+}
+
+app-panel:nth-of-type(3) > list-item:nth-of-type(3) list-cell {
+  padding: .5rem 1rem;
+}
+
+}
 
 panel-start,
 panel-end {
