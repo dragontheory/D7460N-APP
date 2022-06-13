@@ -140,9 +140,6 @@ list-cell:not(:first-of-type):not(:last-of-type) {text-align: center;}
 list-cell:last-child {text-align: end;}
 
 /* SEARCH RESULTS */
-app-panel:nth-of-type(3) panel-start {padding: 0;}
-app-panel:nth-of-type(3) panel-end {background-color: rgba(255,255,255,0.02);}
-
 app-panel:nth-of-type(3) panel-list {gap: .5rem;}
 
 app-panel:nth-of-type(3) list-cell {padding: 1rem;}
@@ -152,8 +149,7 @@ app-panel:nth-of-type(3) > list-item:nth-of-type(1) list-cell {padding: 0 0 .5re
 
 app-panel:nth-of-type(3) > list-item:nth-of-type(3) {background-color: rgba(255,255,255,0.02);}
 
-app-panel:nth-of-type(3) panel-list,
-app-panel:nth-of-type(3) panel-end {margin-top: .5rem;}
+app-panel:nth-of-type(3) panel-list {margin-top: .5rem;}
 
 app-panel:nth-of-type(3) panel-list:last-of-type list-item {
   cursor: pointer;
@@ -176,15 +172,13 @@ app-panel:nth-of-type(3) > list-item:nth-of-type(3) list-cell {
   padding: .5rem 1rem;
 }
 
-}
-
-panel-start,
+/* panel-start,
 panel-end {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr auto;
   padding: 1rem;
-}
+} */
 
 /* PAGINATION */
 app-panel:nth-of-type(3) > list-item:nth-of-type(2) list-cell {
