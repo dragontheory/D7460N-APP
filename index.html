@@ -33,9 +33,11 @@
 <body>
   <app-container>
     <app-panel>
-      <panel-start>logo</panel-start>
-      <panel-middle>: :</panel-middle>
-      <panel-end>username</panel-end>
+      <list-item>
+        <list-cell>logo</list-cell>
+        <list-cell>: :</list-cell>
+        <list-cell>username</list-cell>
+    </list-item>
     </app-panel>
     <app-panel>
       <list-item>
@@ -363,20 +365,20 @@
       </list-item>
     </app-panel>
     <app-panel>
-        <list-item>
-          <list-cell>SEARCH RESULTS</list-cell>
-          <list-cell>
-            <input placeholder="Search" maxlength="30" autocomplete="on" autocorrect="off" list="browsers" spellcheck="false" type="search">
-          </list-cell>
-        </list-item>
-        <list-item>
-          <list-cell>Visible/Non-Visible: [ <span>15</span> / <span>00</span> ] Page: [ <span>01</span> / <span>05</span> ]</list-cell>
-          <list-cell>
-           <span>01</span>&#160;/
-           <span>02</span>&#160;/
-           <span>03</span>&#160;/
-           <span>04</span>&#160;/
-           <span>05</span>
+      <list-item>
+        <list-cell>SEARCH RESULTS</list-cell>
+        <list-cell>
+          <input placeholder="Search" maxlength="30" autocomplete="on" autocorrect="off" list="browsers" spellcheck="false" type="search">
+        </list-cell>
+      </list-item>
+      <list-item>
+        <list-cell>Visible/Non-Visible: [ <span>15</span> / <span>00</span> ] Page: [ <span>01</span> / <span>05</span> ]</list-cell>
+        <list-cell>
+          <span>01</span>&#160;/
+          <span>02</span>&#160;/
+          <span>03</span>&#160;/
+          <span>04</span>&#160;/
+          <span>05</span>
         </list-cell>
       </list-item>
       <list-item>
@@ -598,7 +600,6 @@
           <list-cell>list cell</list-cell>
         </list-item>
       </panel-list>
-      
       <list-item>end</list-item>
     </app-panel>
     <app-panel>
@@ -704,7 +705,9 @@
           <list-cell>list cell</list-cell>
         </list-item>
       </panel-list>
-      <panel-end>end</panel-end>
+      <list-item>
+        <list-cell>end</list-cell><list-cell></list-cell>
+      </list-item>
     </app-panel>
     <app-panel>
       <list-item>
@@ -809,12 +812,16 @@
           <list-cell>list cell</list-cell>
         </list-item>
       </panel-list>
-      <panel-end>end</panel-end>
+      <list-item>
+        <list-cell>end</list-cell><list-cell></list-cell>
+      </list-item>
     </app-panel>
     <app-panel>
-      <panel-start>Powered by: D7460N</panel-start>
-      <panel-middle>: :</panel-middle>
-      <panel-end>version: 0.0001</panel-end>
+      <list-item>
+      <list-cell>Powered by: D7460N</list-cell>
+      <list-cell>: :</list-cell>
+      <list-cell>version: 0.0001</list-cell>
+    </list-item>
     </app-panel>
   </app-container>
   <script src="/assets/js/activecss-dev-2-11-0.min.js"></script>
