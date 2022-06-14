@@ -20,12 +20,33 @@
     app-panel:nth-of-type(2) > list-item list-cell:last-child span:click {
       panel-list {remove-class: .close;}
     }
-    /* CLOSE PANEL */
+    
+    /* OPEN PANEL (it is has list-items) */
+    panel-list:if-exists(list-item):observe {
+      self < app-panel {add-attribute: display: grid;}
+    }
+    
+    /* CLOSE PANEL (by removing it's list items) */
     app-panel:nth-of-type(4) > list-item list-cell:last-child span:click {
       remove: app-panel:nth-of-type(4) panel-list list-item;
     }
     app-panel:nth-of-type(5) > list-item list-cell:last-child span:click {
       remove: app-panel:nth-of-type(5) panel-list list-item;
+    }
+    
+    /* CLOSE LISTS */
+    app-panel panel-list:not-if-exists(list-item):observe {
+      self {add-class: .close;}
+    }
+
+    @command conditional if-html-contains {=
+      return (eventSelector.innerHTML.indexof(conditionalValue)!== -1) ? true : false;
+    =}
+
+    app-panel:nth-of-type(4) list-cell:last-of-type:if-html-contains(,):observe {
+      run: {=
+        o.obj.innerHTML = o.obj.innerHTML.replace(/,/g, '<br />');
+      =};
     }
   </style>
 </head>
