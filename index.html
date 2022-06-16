@@ -23,7 +23,7 @@
     
     /* OPEN PANEL (it is has list-items) */
     panel-list:if-exists(list-item):observe {
-      self < app-panel {add-attribute: display: grid;}
+      self < app-panel {set-attribute: display: grid;}
     }
     
     /* CLOSE PANEL (by removing it's list items) */
